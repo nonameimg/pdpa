@@ -23,7 +23,7 @@ body.section-3 { }
 a:link { text-decoration: none; color: #000; }
 a:active { text-decoration: none; }
 a:visited { text-decoration: none; color: #e791ff; }
-a:hover { text-decoration: none; color: #000; background: #66ffff; }
+a:hover { text-decoration: none; color: #000; background: #e791ff; }
 
 a img { border: none; }
 
