@@ -1,108 +1,33 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
-
-<title>postende</title>
-<link rel="shortcut icon" type="image/ico" href="ico.png"> 
-<link rel='stylesheet' href='style.css' />
-
-<style type='text/css'>
-#num {padding-left: 6px;}
-	.img-bot {margin-bottom: 6px; display: block; }
+<title>JQuery Cycle Plugin - Basic Demo</title>
+<style type="text/css">
+.slideshow { height: 232px; width: 232px; margin: auto }
+.slideshow img { padding: 15px; border: 1px solid #ccc; background-color: #eee; }
 </style>
-
-<script type='text/javascript' src='http://kirillsavchenkov.com/ndxz-studio/site/js/jquery.js'></script>
-<script type='text/javascript' src='http://kirillsavchenkov.com/ndxz-studio/site/js/cookie.js'></script>
-<script type='text/javascript' src='http://kirillsavchenkov.com/ndxz-studio/site/js/jquery.cycle.all.js'></script>
-
-<script type='text/javascript'>
-path = 'http://postende.com/postende/gakhn/img/';
-
-$(document).ready(function()
-{
-	setTimeout('move_up()', 1);
+<!-- include jQuery library -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+	});
 });
 </script>
-<script type='text/javascript'>
-$(document).ready(function(){ 
-	$('#s1').cycle({
-	fx:'fade', 
-	speed:'2000', 
-	timeout: 0, 
-	next:'#next', prev:'#prev'});
-	});
-</script>
-
-
 </head>
-
-<body class='section-4'>
-<div id='menu'>
-<div class='container'>
-
-<p>KIRILL SAVCHENKOV<br />
-<a href='http://kirillsavchenkov.com/index.php?/about-this-site/'></a></p>
-<ul>
-<li class='section-title'>Work</li>
-<li class='active'><a href='http://kirillsavchenkov.com/index.php?/works/then-a-kiss-is-not-a-kiss/' onclick="do_click();">Then a Kiss Is Not a Kiss</a></li>
-<li><a href='http://kirillsavchenkov.com/index.php?/works/chkristin-close-air-support/' onclick="do_click();">Ch(K)ris(tin). Close Air Support</a></li>
-<li><a href='http://kirillsavchenkov.com/index.php?/works/fireworks-and-gunpowder/' onclick="do_click();">Fireworks and Gunpowder</a></li>
-<li><a href='http://kirillsavchenkov.com/index.php?/works/the-elsewhere-logistics/' onclick="do_click();">The Elsewhere Logistics</a></li>
-<li><a href='http://kirillsavchenkov.com/index.php?/works/office-of-sensitive-activitiesapplications-group/' onclick="do_click();">Office of Sensitive Activities\Applications Group</a></li>
-<li><a href='http://kirillsavchenkov.com/index.php?/works/knowledge-editing-division/' onclick="do_click();">Knowledge Editing Division</a></li>
-<li><a href='http://kirillsavchenkov.com/index.php?/works/memorial-center/' onclick="do_click();">Horizon Community Memorial Center</a></li>
-<li><a href='http://kirillsavchenkov.com/index.php?/works/horizon-community-workshop/' onclick="do_click();">Horizon Community Workshop</a></li>
-<li><a href='http://kirillsavchenkov.com/index.php?/works/museum-of-skateboarding/' onclick="do_click();">Museum of skateboarding</a></li>
-<li><a href='http://kirillsavchenkov.com/index.php?/works/avalanche/' onclick="do_click();">Avalanche</a></li>
-</ul>
-
-<ul>
-<li class='section-title'> </li>
-<li><a href='http://kirillsavchenkov.com/index.php?/cv/' onclick="do_click();">CV</a></li>
-<li><a href='http://kirillsavchenkov.com/index.php?/contact/' onclick="do_click();">Contact</a></li>
-</ul>
-
-
-
-
-<!-- you must provide a link to Indexhibit on your site someplace - thank you -->
-<ul>
-<li> <a href='/'></a></li>
-</ul>
-
-</div>	
-</div>	
-
-<div id='content'>
-<div class='container'>
-
-<!-- text and image -->
-<p><em><strong>2019, Then a Kiss Is Not a Kiss, V-A-C Zattere, Venice</strong></em></p>
-
-<p><em> Multi-channel sound installation <br />
-(carbon, polycaprolactone, flowers, Nylon 6, dulodulo, steel, aluminum EcoShape, Element E-lite Personal Hook Signal IR LED, glass, foamiran, carpet, hair, Ultrasonic Acouspade Classic hyper directional sound system).<br />
-Commissioned by V-A-C Foundation</em></p>
-
-<div id='img-container'>
-<p class='nav'><a id='prev' href='#'>Prev</a> | <a id='next' href='#'>Next</a> 
-	       <span id='num'></span></p><div id='s1' class='pics'>
-
-<div><img src='http://postende.com/postende/gakhn/img/gakhn-1.jpg' class='img-bot' /><p>&nbsp;</p></div>
-<div><img src='http://postende.com/postende/gakhn/img/gakhn-2.jpg' class='img-bot' /><p>&nbsp;</p></div>
-
-
-</div>
-</div>
-
-
-<!-- end text and image -->
-
-</div>
-</div>
-
+<body>
+	<div class="slideshow">
+		<img src="http://postende.com/postende/gakhn/img/gakhn-1.jpg" width="1200"  />
+		<img src="http://postende.com/postende/gakhn/img/gakhn-2.jpg" width="1200"  />
+		<img src="http://postende.com/postende/gakhn/img/gakhn-3.jpg" width="1200"  />
+		<img src="http://postende.com/postende/gakhn/img/gakhn-4.jpg" width="1200"  />
+		<img src="http://postende.com/postende/gakhn/img/gakhn-5.jpg" width="1200"  />
+	</div>
 </body>
 </html>
