@@ -14,16 +14,7 @@ a:link { text-decoration: none; color: #000; }
 a:active { text-decoration: none; }
 a:visited { text-decoration: none; color: #e791ff; }
 a:hover { text-decoration: none; color: #000; background: #e791ff; }
-#menu {
-    width: 20%;
-    overflow: auto;
-    top: 0;
-    bottom: 0;
-	left: 0;
-    position: fixed;
-    height: 100%;
-	background-color: #fff;
-}
+
 #menu ul {
 	list-style: none;
 	margin: 0 0 12px 0;
