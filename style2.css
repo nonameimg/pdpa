@@ -15,7 +15,7 @@ a:active { text-decoration: none; }
 a:visited { text-decoration: none; color: #e791ff; }
 a:hover { text-decoration: none; color: #000; background: #e791ff; }
 #menu {
-    
+    width: 215px;
     overflow: auto;
     top: 0;
     bottom: 0;
