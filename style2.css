@@ -26,7 +26,6 @@ a:hover { text-decoration: none; color: #000; background: #e791ff; }
 }
 #menu ul {
 	list-style: none;
-	height: 100%;
 	margin: 0 0 12px 0;
 }
 
@@ -38,7 +37,7 @@ a:hover { text-decoration: none; color: #000; background: #e791ff; }
 .container {
     padding: 5px 5px 25px 5px;
 }
-#content p { width: 80%; margin-bottom: 9px; }
+#content p { width: 60%; margin-bottom: 9px; }
 p {
     margin: 0 0 9px 0;
 }
@@ -47,4 +46,4 @@ h2 { font-size: 10px; }
 h3 { font-size: 10px; }
 h4 { font-size: 10px; }
 #img-container    { margin: 0; padding: 0; }
-#img-container p    { width: 600px; margin: 0; padding: 0 0 12px 0; }
+#img-container p    { width: 60%; margin: 0; padding: 0 0 12px 0; }
