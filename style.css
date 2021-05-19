@@ -9,9 +9,7 @@ body {
 	background: #fff;
 }
 
-body.section-1 { }
-body.section-2 { }
-body.section-3 { }
+
 
 a:link { text-decoration: none; color: #000; }
 a:active { text-decoration: none; }
@@ -36,7 +34,6 @@ a img { border: none; }
 	margin: 0 0 12px 0;
 }
 
-#menu ul li.section-title { }
 
 #content {
     /*height: 100%;*/
