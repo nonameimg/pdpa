@@ -19,7 +19,7 @@ a:hover { text-decoration: none; color: #000; background: #e791ff; }
 a img { border: none; }
 
 #menu {
-    width: 13em;
+    width: 215px;
     /*overflow: auto;*/
     top: 0;
     bottom: 0;
@@ -37,7 +37,7 @@ a img { border: none; }
 
 #content {
     /*height: 100%;*/
-    margin: 0 0 0 13em;
+    margin: 0 0 0 215px;
     top: 0;
 }
 
