@@ -64,6 +64,7 @@ a img { border: none; }
 #content p { width: 80%; margin-bottom: 9px; }
 
 p {
+	max-width: 600px;
     margin: 0 0 9px 0;
 }
 
