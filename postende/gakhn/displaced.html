@@ -2,30 +2,29 @@
 <!DOCTYPE html5>
 <html>
 <head>
-<title>JQuery Cycle Plugin - Basic Demo</title>
-<style type="text/css">
-.slideshow { height: 232px; width: 232px; margin: auto }
-.slideshow img { padding: 15px; border: 1px solid #ccc; background-color: #eee; }
-</style>
-<!-- include jQuery library -->
-<script type="text/javascript" src="https://www.postende.com/jquery.min.js"></script>
-<!-- include Cycle plugin -->
-<script type="text/javascript" src="https://www.postende.com/jquery.cycle.all.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $('.slideshow').cycle({
-		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-	});
-});
-</script>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
 </head>
 <body>
-	<div class="slideshow">
-		<img src="http://malsup.github.com/images/beach1.jpg" width="200" height="200" />
+<div class="cycle-slideshow"
+    data-cycle-fx="scrollHorz"
+    data-cycle-timeout="0"
+    data-cycle-prev="#prev"
+    data-cycle-next="#next"
+    >
+    <img src="http://malsup.github.com/images/beach1.jpg" width="200" height="200" />
 		<img src="http://malsup.github.com/images/beach2.jpg" width="200" height="200" />
 		<img src="http://malsup.github.com/images/beach3.jpg" width="200" height="200" />
 		<img src="http://malsup.github.com/images/beach4.jpg" width="200" height="200" />
 		<img src="http://malsup.github.com/images/beach5.jpg" width="200" height="200" />
-	</div>
+</div>
+
+<div class="center">
+    <a href=# id="prev">Prev</a> 
+    <a href=# id="next">Next</a>
+</div>
+
 </body>
 </html>
