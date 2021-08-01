@@ -1,40 +1,89 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <title>test page</title>
-    <meta charset="utf-8">
-<link rel="shortcut icon" type="image/ico" href="ico.png"> 
-<link rel='stylesheet' href='stylex.css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
 
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
 </head>
 <body>
+
 <div id="myNav" class="overlay">
-
-  <!-- Button to close the overlay navigation -->
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-  <!-- Overlay content -->
   <div class="overlay-content">
     <a href="#">About</a>
     <a href="#">Services</a>
     <a href="#">Clients</a>
     <a href="#">Contact</a>
   </div>
-
 </div>
 
-<!-- Use any element to open/show the overlay navigation menu -->
-<span onclick="openNav()">open</span>
-    
-    <div id='content'>
-	<div class='container'>
-        <h1>PORTFOLIO PAGE</h1>
-    <h2>framework homework</h2>
-    <p>This project is about the interweaving of stories of different types of matter (pulsating matter-slime mold, brother of rattlesnake jelly), about different points of view on the same events. The resonance between our reality and his. Physarum as the oil absorbs other types of matter, but retains their survivability in itself, and therefore is a living antagonist of oil.Over time, holes are formed in the Earth's surface and in its history, which are left unexplored by most of its inhabitants. Because of its all-pervading nature, slime is able to find the dark and hidden places of history and connect them into a new narrative. Like an all-encompassing living something that preserves the knowledge of the absorbed.The slime mold acts as an archaeologist, raising events from the depths of the Earth's history before or even after their time comes, thereby violating the linearity of the flow of time.The starting point of the project is the appearance of <b>blusting Jelly</b>. Next, the story will unfold according to the slime mold's choice of one of the 12 events during the experiments.</p>
-    <div id='img-container'>
-	<span class='nothumb'> <img src="postende/1881/DSC02713.jpg"  style="width:100%;max-width:1200px">&nbsp;</span>
-    <span class='nothumb'><img src='postende/1881/DSC02711.jpg' style="width:100%;max-width:1200px">&nbsp;</span>
-    <p>This project is about the interweaving of stories of different types of matter (pulsating matter-slime mold, brother of rattlesnake jelly), about different points of view on the same events. The resonance between our reality and his. </p>
-	</div>
-	</div>
-	</div>
+<h2>Fullscreen Overlay Nav Example</h2>
+<p>Click on the element below to open the fullscreen overlay navigation menu.</p>
+<p>In this example, the navigation menu will slide in, from left to right:</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
 </body>
+</html>
