@@ -10,23 +10,27 @@ body {
 }
 
   
-  #buttonClose{
+  #button{
 	  float:right;
 	 position: fixed;
      top: 0;
      right: 0;
+	 font-size:20px;
+	 cursor:pointer;
+	 background-color: #e791ff;
   }
+  /*
   #buttonOpen{
 	 float:right;
 	 position: fixed;
      top: 0;
      right: 0;
-  }
+  }*/
   
   
 a:link { text-decoration: none; color: #000; }
 a:active { text-decoration: none; }
-a:visited { text-decoration: none; color: #e791ff; }
+a:visited { text-decoration: none; color:  }
 a:hover { text-decoration: none; color: #000; background: #e791ff; }
 
 a img { border: none; }
