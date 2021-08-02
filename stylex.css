@@ -33,18 +33,19 @@ body {
   #slider-button-left{
 	 float:left;
 	 position: relative;
+	 top: 50%;
           left: 0;
 	  font-size:30px;
 	 cursor:pointer;
 	 background-color:#e791ff;
-	 align-content: center;
+	 
   }
   #slider-button-right{
 	 float:right;
 	 position: relative;
-     align-content: center;
+     top: 50%;
      right: 0;
-	  font-size:30px;
+	 font-size:30px;
 	 cursor:pointer;
 	 background-color:#e791ff;
 	 
