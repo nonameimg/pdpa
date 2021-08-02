@@ -103,6 +103,53 @@
 
 </div>
 </div>
+
+<!-- menu functions -->
+<script>
+	
+	
+function openNav() {
+  document.getElementById("menu").style.width = "100%";
+  document.getElementById("menu").style.background = "#e791ff";
+document.getElementById("buttonOpen").style.visibility="hidden";
+document.getElementById("buttonClose").style.visibility="visible";
+}
+
+function closeNav() {
+  document.getElementById("menu").style.width = "0%";
+  document.getElementById("buttonOpen").style.visibility="visible";
+document.getElementById("buttonClose").style.visibility="hidden";
+}
+
+
+</script>
+<script>
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.getElementById("content").style.margin= "0";
+	document.getElementById("menu").style.width= "0";
+	
+	document.getElementById("buttonClose").style.visibility="visible";
+	document.getElementById("buttonOpen").style.visibility="visible";
+	
+	document.getElementById("buttonClose").style.hight="100%";
+	document.getElementById("buttonOpen").style.hight="100%";
+  } else {
+   document.getElementById("content").style.margin= "0 0 0 215px";
+   document.getElementById("menu").style.width= "215px";
+   
+   document.getElementById("buttonClose").style.visibility="hidden";
+	document.getElementById("buttonOpen").style.visibility="hidden";
+	
+	document.getElementById("buttonClose").style.hight="0px";
+	document.getElementById("buttonOpen").style.hight="0px";
+  }
+}
+
+var x = window.matchMedia("(max-width: 650px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+</script>
 </body>
 
 
