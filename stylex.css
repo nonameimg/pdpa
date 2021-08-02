@@ -48,6 +48,7 @@ a img { border: none; }
     position: fixed;
     height: 100%;
 	background-color: #fff;
+	z-index: 950;
 }
 
 #menu ul {
@@ -71,6 +72,7 @@ a img { border: none; }
   width: 80%;
   overflow: hidden;
   padding-top: 45%; /* 16:9 Aspect Ratio */
+  z-index: 900;
 }
 .responsive-iframe {
   position: absolute;
