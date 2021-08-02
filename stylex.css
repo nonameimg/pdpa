@@ -103,5 +103,5 @@ h4 { font-size: 10px; }
 .slider-container {
 	width: 80%; margin: 0; padding: 0;
 }
-.slider-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
-.slider-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.slider-left{left: 0;}
+.slider-right{right: 0;}
