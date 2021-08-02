@@ -15,19 +15,13 @@ body {
 	 position: fixed;
      top: 0;
      right: 0;
-	 font-size:50px;
-	 cursor:pointer;
-	 background-color: red;
+	 
   }
-  
   #buttonOpen{
 	 float:right;
 	 position: fixed;
      top: 0;
      right: 0;
-	 font-size:20px;
-	 cursor:pointer;
-	 background-color: #e791ff;
   }
   
   
