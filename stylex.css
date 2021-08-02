@@ -13,7 +13,7 @@ body {
   #buttonClose{
 	  float:right;
 	 position: fixed;
-     top: 0;
+     top: 5%;
      right: 0;
   }
   #buttonOpen{
