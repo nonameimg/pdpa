@@ -88,6 +88,9 @@ a img { border: none; }
 .container {
     padding: 5px 5px 25px 5px;
 }
+.slider-container {
+    width: 100%;
+}
 
 .video-container {
   position: relative;
