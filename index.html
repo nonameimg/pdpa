@@ -20,7 +20,7 @@
 <body>
 <div id='menu'>
 <div class='container'>
- <span id='buttonClose' style="font-size:20px;cursor:pointer;background-color:yellow;" onclick="closeNav()">&times; </span>   
+ <span id='buttonClose' style="font-size:20px;cursor:pointer;background-color:yellow;" onclick="closeNav()">&times;close </span>   
 <p><strong>POSTENDE</strong><br /></p>
 
 <p></p>
@@ -124,15 +124,19 @@ function myFunction(x) {
   if (x.matches) { // If media query matches
     document.getElementById("content").style.margin= "0";
 	document.getElementById("menu").style.width= "0";
+	
 	document.getElementById("buttonClose").style.visibility="visible";
 	document.getElementById("buttonOpen").style.visibility="visible";
+	
 	document.getElementById("buttonClose").style.hight="100%";
 	document.getElementById("buttonOpen").style.hight="100%";
   } else {
    document.getElementById("content").style.margin= "0 0 0 215px";
+   document.getElementById("menu").style.width= "215px";
+   
    document.getElementById("buttonClose").style.visibility="hidden";
 	document.getElementById("buttonOpen").style.visibility="hidden";
-	document.getElementById("menu").style.width= "215px";
+	
 	document.getElementById("buttonClose").style.hight="0px";
 	document.getElementById("buttonOpen").style.hight="0px";
   }
