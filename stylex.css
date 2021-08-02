@@ -10,7 +10,7 @@ body {
 }
 
   
-  #button{
+  #buttonClose{
 	  float:right;
 	 position: fixed;
      top: 0;
@@ -19,13 +19,16 @@ body {
 	 cursor:pointer;
 	 background-color: #e791ff;
   }
-  /*
+  
   #buttonOpen{
 	 float:right;
 	 position: fixed;
      top: 0;
      right: 0;
-  }*/
+	 font-size:20px;
+	 cursor:pointer;
+	 background-color: #e791ff;
+  }
   
   
 a:link { text-decoration: none; color: #000; }
