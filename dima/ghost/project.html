@@ -3,9 +3,10 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=0.8">
+<meta charset="utf-8">
 <title>postende</title>
 <link rel="shortcut icon" type="image/png" href="https://nonameimg.github.io/postende/ico.png"> 
-<link rel='stylesheet' href='//postende.com/style.css' />
+<link rel='stylesheet' href='//postende.com/stylex.css' />
 
 
 
@@ -15,15 +16,14 @@
 <body>
 <div id='menu'>
 <div class='container'>
-    
+      <span id='buttonClose'  onclick="closeNav()">&times; close </span>     
 <p><strong>POSTENDE</strong><br /></p>
 
 <p></p>
 <ul>
 <li><a href='http://www.postende.com/postende/aboutp.html' onclick="do_click();">ABOUT</a></li>
 <li><a href='http://www.postende.com/postende/pressp.html' onclick="do_click();">PRESS</a></li>
-<li><a href='http://www.postende.com/postende/cvp.html' onclick="do_click();">CV</a></li>
-<li><a href='https://www.facebook.com/postende' onclick="do_click();">CONTACT</a></li>
+
 </ul>
 <ul>
 <li class='section-title'>SELECTED PROJECTS:</li>
@@ -37,9 +37,9 @@
 <p></p>
 <ul>
 <li><a href='http://www.postende.com/dima/about.html' onclick="do_click();">ABOUT</a></li>
-<li><a href='http://www.postende.com/dima/press.html' onclick="do_click();">PRESS</a></li>
+
 <li><a href='http://www.postende.com/dima/cv.html' onclick="do_click();">CV</a></li>
-<li><a href='https://www.facebook.com/dmitrii.olgin/' onclick="do_click();">CONTACT</a></li>
+
 </ul>
 <ul>
 <li class='section-title'>SELECTED SOLO PROJECTS:</li>
@@ -53,15 +53,16 @@
 <p></p>
 <ul>
 <li><a href='http://www.postende.com/vita/aboutV.html' onclick="do_click();">ABOUT</a></li>
-<li><a href='http://www.postende.com/vita/pressV.html' onclick="do_click();">PRESS</a></li>
+
 <li><a href='http://www.postende.com/vita/cvV.html' onclick="do_click();">CV</a></li>
-<li><a href='https://www.facebook.com/bettercallvik/' onclick="do_click();">CONTACT</a></li>
+
 </ul>
 <ul>
 <li class='section-title'>SELECTED SOLO PROJECTS:</li>
 <li><a href='http://www.postende.com/vita/ride_in_the_dark/ride_in_the_dark.html' onclick="do_click();">ride in the dark, Moscow, 2019</a></li>
 <li><a href='http://www.postende.com/vita/place_of_past/place_of_past.html' onclick="do_click();">place of past, Moscow, 2019</a></li>
     <li><a href='http://www.postende.com/vita/acctv/acctv.html' onclick="do_click();">ACCTV, Moscow, 2019</a></li>
+	<li><a href='https://www.postende.com/vita/between_the_branches/a_couple_of_steps_forward.html' onclick="do_click();">between the branches, a couple of steps forward, Moscow, 2021</a></li>
 </ul>
 
 
@@ -69,7 +70,7 @@
 </div>	
 <div id='content'>
 <div class='container'>
-
+<span id='buttonOpen'  onclick="openNav()">&equiv; menu</span>
 
 
 <!-- text and image -->
@@ -83,25 +84,62 @@
 <p>Toto číslo novin je sbírkou příběhů a poznámek zanechaných na nástěnce autobusové zastávky.  Autobusová zastávka, která nikdy neexistovala, a přesto existuje v každém městě. Jako organická součást městské infrastruktury slouží autobusová zastávka jako rozhraní nebo brána do paralelní dimenze, rozměru tranzitních zón, neboli ne-míst, jak říká Marc Auger.
 Svět ne-místt postupně proniká do našeho světa a zanechává v něm pro nás neviditelné blikající přízračné prvky. Toto pomalé, ale nebezpečné míchání znamená zničení nebo spíše dobrovolný zánik našeho městského světa. Jako protiútok můžete použít subverzivní rozhraní (stažením z odkazu na qr kódu) a získat zpět své místo, obnovit historičnost a identitu vyprázdněných prostor prostřednictvím síly loga v dialogu s ostatními obyvateli v poznámkách, které po sobě zanechali.
  </p>
- <!--
-<div id='img-container'>
+ 
 
-<span> <img src="2 (31).jpg"  style="width:100%;max-width:600px">&nbsp;</span>
-</div>
--->
-<!-- end text and image -->
 <div class="video-container"> 
   <iframe class="responsive-iframe" width="1200" height="675" src="https://www.youtube.com/embed/gA5Ru9hqZ68"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
 </div>
-<!--
-<div class="video-container"> 
 
-<iframe class="responsive-iframe" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=132h6bq95e" width="100%" height="500" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
+<!-- end text and image -->
 </div>
--->
+</div>
 
-</div>
-</div>
+<!-- menu functions -->
+<script>
+	
+	
+function openNav() {
+  document.getElementById("menu").style.width = "100%";
+  document.getElementById("menu").style.background = "#e791ff";
+document.getElementById("buttonOpen").style.visibility="hidden";
+document.getElementById("buttonClose").style.visibility="visible";
+}
+
+function closeNav() {
+  document.getElementById("menu").style.width = "0%";
+  document.getElementById("buttonOpen").style.visibility="visible";
+document.getElementById("buttonClose").style.visibility="hidden";
+}
+
+
+</script>
+<script>
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.getElementById("content").style.margin= "0";
+	document.getElementById("menu").style.width= "0";
+	
+	document.getElementById("buttonClose").style.visibility="visible";
+	document.getElementById("buttonOpen").style.visibility="visible";
+	
+	document.getElementById("buttonClose").style.hight="100%";
+	document.getElementById("buttonOpen").style.hight="100%";
+  } else {
+   document.getElementById("content").style.margin= "0 0 0 215px";
+   document.getElementById("menu").style.width= "215px";
+   
+   document.getElementById("buttonClose").style.visibility="hidden";
+	document.getElementById("buttonOpen").style.visibility="hidden";
+	
+	document.getElementById("buttonClose").style.hight="0px";
+	document.getElementById("buttonOpen").style.hight="0px";
+  }
+}
+
+var x = window.matchMedia("(max-width: 650px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+</script>
 </body>
 
 
