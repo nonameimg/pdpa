@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <title>test page</title>
-    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>test page</title>
+<meta charset="utf-8">
 <link rel="shortcut icon" type="image/ico" href="ico.png"> 
 <!-- main stylesheet -->
-<link rel='stylesheet' href='https://www.postende.com/stylex.css' />
-
+<link rel='stylesheet' href='file:///C:/Users/noname/Documents/GitHub/postende/pdpa/stylex.css' />
 
 </head>
 <body>
+
 <div id='menu'>
 <div class='container'>
 
-<span style="font-size:10px;cursor:pointer;" class="closebtn" onclick="closeNav()">&times; close menu</span>
-    <p><strong>POSTENDE<br><br></strong> </p>
+<span id='buttonClose' style="font-size:20px;cursor:pointer;background-color:yellow;" onclick="closeNav()">&times; </span>
+  
+	
+	<p><strong>POSTENDE<br><br></strong> </p>
 	<ul>
-		<li><a href='https://www.postende.com/stranka.html' onclick="do_click();">ABOUT</a></li>
-		
+		<li><a href='file:///C:/Users/noname/Documents/GitHub/postende/pdpa/stranka.html' onclick="do_click();">ABOUT</a></li>
+
 	</ul>
     
 </div>
@@ -26,25 +28,57 @@
     
     <div id='content'>
 	<div class='container'>
-	<span style="font-size:10px;cursor:pointer;" onclick="openNav()">&equiv; open menu</span>
+	<span id='buttonOpen' style="font-size:20px;cursor:pointer;background-color:yellow;" onclick="openNav()">&equiv; menu</span>
+	
         <h1>PORTFOLIO PAGE</h1>
     <h2>framework homework</h2>
     <p>This project is about the interweaving of stories of different types of matter (pulsating matter-slime mold, brother of rattlesnake jelly), about different points of view on the same events. The resonance between our reality and his. Physarum as the oil absorbs other types of matter, but retains their survivability in itself, and therefore is a living antagonist of oil.Over time, holes are formed in the Earth's surface and in its history, which are left unexplored by most of its inhabitants. Because of its all-pervading nature, slime is able to find the dark and hidden places of history and connect them into a new narrative. Like an all-encompassing living something that preserves the knowledge of the absorbed.The slime mold acts as an archaeologist, raising events from the depths of the Earth's history before or even after their time comes, thereby violating the linearity of the flow of time.The starting point of the project is the appearance of <b>blusting Jelly</b>. Next, the story will unfold according to the slime mold's choice of one of the 12 events during the experiments.</p>
     <div id='img-container'>
-	<span class='nothumb'> <img src="postende/1881/DSC02713.jpg"  style="width:100%;max-width:1200px">&nbsp;</span>
-    <span class='nothumb'><img src='postende/1881/DSC02711.jpg' style="width:100%;max-width:1200px">&nbsp;</span>
+	<span class='nothumb'> <img src="file:///C:/Users/noname/Documents/GitHub/postende/pdpa/postende/1881/DSC02713.jpg"  style="width:100%;max-width:1200px">&nbsp;</span>
+    <span class='nothumb'><img src='file:///C:/Users/noname/Documents/GitHub/postende/pdpa/postende/1881/DSC02711.jpg' style="width:100%;max-width:1200px">&nbsp;</span>
     <p>This project is about the interweaving of stories of different types of matter (pulsating matter-slime mold, brother of rattlesnake jelly), about different points of view on the same events. The resonance between our reality and his. </p>
 	</div>
 	</div>
 	</div>
 	<script>
+	
+	
 function openNav() {
   document.getElementById("menu").style.width = "100%";
+document.getElementById("buttonOpen").style.visibility="hidden";
+document.getElementById("buttonClose").style.visibility="visible";
 }
 
 function closeNav() {
   document.getElementById("menu").style.width = "0%";
+  document.getElementById("buttonOpen").style.visibility="visible";
+document.getElementById("buttonClose").style.visibility="hidden";
 }
+
+
+</script>
+<script>
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.getElementById("content").style.margin= "0";
+	document.getElementById("menu").style.width= "0";
+	document.getElementById("buttonClose").style.visibility="visible";
+	document.getElementById("buttonOpen").style.visibility="visible";
+	document.getElementById("buttonClose").style.hight="100%";
+	document.getElementById("buttonOpen").style.hight="100%";
+  } else {
+   document.getElementById("content").style.margin= "0 0 0 215px";
+   document.getElementById("buttonClose").style.visibility="hidden";
+	document.getElementById("buttonOpen").style.visibility="hidden";
+	document.getElementById("menu").style.width= "215px";
+	document.getElementById("buttonClose").style.hight="0px";
+	document.getElementById("buttonOpen").style.hight="0px";
+  }
+}
+
+var x = window.matchMedia("(max-width: 480px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
 </script>
 </body>
 </html>
