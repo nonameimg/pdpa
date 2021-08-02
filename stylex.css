@@ -15,6 +15,9 @@ body {
 	 position: fixed;
      top: 0;
      right: 0;
+	 font-size:20px;
+	 cursor:pointer;
+	 background-color:#e791ff;
 	 
   }
   #buttonOpen{
@@ -22,6 +25,9 @@ body {
 	 position: fixed;
      top: 0;
      right: 0;
+	  font-size:20px;
+	 cursor:pointer;
+	 background-color:#e791ff;
   }
   
   
