@@ -10,7 +10,9 @@
 
 
 
-
+<style>
+.mySlides {display:none;}
+</style>
 </head>
 
 <body>
@@ -76,8 +78,10 @@
 <!-- text and image -->
 
 
-
-
+<span> <img class="mySlides" src="1.jpg"  style="width:100%"> </span>
+<span> <img class="mySlides" src="2.jpg"  style="width:100%"> </span>
+<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 
 <p><strong> the ghost of a non-place , Brno, 2021 </strong></p>
 <p>game interface and newspaper</p>
@@ -139,6 +143,27 @@ function myFunction(x) {
 var x = window.matchMedia("(max-width: 650px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listener function on state changes
+</script>
+
+<!-- slider functions -->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
 </script>
 </body>
 
