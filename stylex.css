@@ -31,20 +31,20 @@ body {
 	 z-index: 960;
   }
   #slider-button-left{
-	 float:left;
-	 position: absolute;
-	 top: 100px;
-          left: 0;
+	 position:absolute;top:50%;left:0%; 
+	 
+	 
+         
 	  font-size:30px;
 	 cursor:pointer;
 	 background-color:#e791ff;
 	 
   }
   #slider-button-right{
-	 float:right;
-	 position: absolute;
-     top: 100px;
-     right: 0;
+	 
+	 position:absolute;top:50%;right:0%; 
+     
+     
 	 font-size:30px;
 	 cursor:pointer;
 	 background-color:#e791ff;
@@ -124,3 +124,17 @@ h4 { font-size: 10px; }
 
 #img-container    { width: 80%; margin: 0; padding: 0; }
 #img-container p    { width: 60%; margin: 0; padding: 0 0 12px 0; }
+
+
+.w3-display-container{position:relative} 
+.w3-content{margin-left:0;margin-right:auto}.w3-content{max-width:80%}.w3-auto{max-width:1140px}
+.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+   
+ 
+
+
+.w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button{width:100%}}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:red}
+.w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
