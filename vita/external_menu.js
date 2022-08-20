@@ -1,3 +1,4 @@
+var element = '
 <div id='menu'>
 <div class='container'>
  <span id='buttonClose'  onclick="closeNav()">&times; close </span>   
@@ -57,4 +58,4 @@
 </ul>
 
 </div>	
-</div>
+</div>';
