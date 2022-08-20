@@ -1,4 +1,5 @@
-var element = '<p><strong>POSTENDE</strong><br /></p>
+var element = '<div>
+<p><strong>POSTENDE</strong><br /></p>
 
 <p></p>
 <ul>
@@ -51,4 +52,5 @@ var element = '<p><strong>POSTENDE</strong><br /></p>
 <!-- <li><a href='http://www.postende.com/vita/place_of_past/place_of_past.html' onclick="do_click();">place of past, Moscow, 2019</a></li>-->
 <li><a href='http://www.postende.com/vita/acctv/acctv.html' onclick="do_click();">ACCTV, Moscow, 2019</a></li>
 
-</ul>';
+</ul>
+</div>';
