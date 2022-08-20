@@ -1,5 +1,5 @@
 var element = '<div>
-                   <p><strong>POSTENDE</strong><br /></p>
+<p><strong>POSTENDE</strong><br /></p>
 
 <p></p>
 <ul>
