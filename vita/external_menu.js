@@ -1,4 +1,5 @@
-var element = '<div id='menu'>
+var element = '
+<div id='menu'>
 <div class='container'>
  <span id='buttonClose'  onclick="closeNav()">&times; close </span>   
 <p><strong>POSTENDE</strong><br /></p>
