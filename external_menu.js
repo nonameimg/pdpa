@@ -1,7 +1,4 @@
-var element = '<div id='menu'>
-<div class='container'>
- <span id='buttonClose'  onclick="closeNav()">&times; close </span>   
-<p><strong>POSTENDE</strong><br /></p>
+var element = '<p><strong>POSTENDE</strong><br /></p>
 
 <p></p>
 <ul>
@@ -54,7 +51,4 @@ var element = '<div id='menu'>
 <!-- <li><a href='http://www.postende.com/vita/place_of_past/place_of_past.html' onclick="do_click();">place of past, Moscow, 2019</a></li>-->
 <li><a href='http://www.postende.com/vita/acctv/acctv.html' onclick="do_click();">ACCTV, Moscow, 2019</a></li>
 
-</ul>
-
-</div>	
-</div>';
+</ul>';
