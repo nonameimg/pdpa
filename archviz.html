@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.3.0/dist/photoswipe.css">
+    <link rel="stylesheet" href="https://dimsemenov.github.io/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+	<link rel="stylesheet" href="stylearch.css">
+<body>
+</head>
+<style>
+
+</style>
+
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="file:///C:/Users/olgin/Desktop/archviz/about_.html">about</a>
+    <a href="file:///C:/Users/olgin/Desktop/archviz/contacts.html">contact</a>
+  </div>
+</div>
+
+
+
+
+<div class="w3-bar w3-red fix  ">
+  <a href="file:///C:/Users/olgin/Desktop/archviz/archviz.html" class="w3-bar-item w3-button  ">home</a>
+  <a href="file:///C:/Users/olgin/Desktop/archviz/about_.html" class="w3-bar-item w3-button w3-hide-small">about</a>
+  <a href="file:///C:/Users/olgin/Desktop/archviz/contacts.html" class="w3-bar-item w3-button w3-hide-small">contact</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium " onclick="openNav()">&#9776; </a>
+</div>
+
+<div id="demo" class="up5 w3-bar-block  w3-hide w3-hide-large w3-hide-medium  w3-red fix ">
+  <a href="file:///C:/Users/olgin/Desktop/archviz/about_.html" class="w3-bar-item w3-button">about</a>
+  <a href="file:///C:/Users/olgin/Desktop/archviz/contacts.html" class="w3-bar-item w3-button">contact</a>
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.3.js"
+integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+crossorigin="anonymous"></script>
+  
+ 
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.list').click(function(){
+	const value = $(this).attr('data-filter');
+	if (value == 'all'){
+	$('.itemBox').show('1000');
+	}
+	else {
+	$('.itemBox').not('.'+value).hide('1000');
+	$('.itemBox').filter('.'+value).show('1000');
+	}
+	})
+	$('.list').click(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		})
+})
+	</script>
+
+
+<script type="module">
+
+      import PhotoSwipeLightbox from "https://cdn.jsdelivr.net/npm/photoswipe@5.3.0/dist/photoswipe-lightbox.esm.js";	
+      import PhotoSwipeDynamicCaption from "https://dimsemenov.github.io/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.esm.js";
+
+      const smallScreenPadding = {
+        top: 0, bottom: 0, left: 0, right: 0
+      };
+      const largeScreenPadding = {
+        top: 30, bottom: 30, left: 0, right: 0
+      };
+      const lightbox = new PhotoSwipeLightbox({
+        gallerySelector: '#gallery',
+        childSelector: '.pswp-gallery__item ',
+        
+        // optionaly adjust viewport
+        paddingFn: (viewportSize) => {
+          return viewportSize.x < 700 ? smallScreenPadding : largeScreenPadding
+        },
+        pswpModule: () => import("https://cdn.jsdelivr.net/npm/photoswipe@5.3.0/dist/photoswipe.esm.js")
+      });
+
+      const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
+        mobileLayoutBreakpoint: 700,
+        type: 'auto',
+        mobileCaptionOverlapRatio: 1
+      });
+
+      lightbox.init();
+      </script>
+<!-- text start-->
+<div class="container">
+
+  <div class="header ">
+   <h1>Dmitrii Olgin</h1>
+  <p> 3D visualisation</p>
+  
+</div>
+</div>
+
+<!-- text end-->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
+</script>
+
+<section class="sticky">
+	<ul >
+		<li class= "list active" data-filter="all">all</li>
+		<li class= "list" data-filter="exterior">exterior</li>
+		<li class= "list" data-filter="interior">interior</li>
+		<li class= "list" data-filter="bedroom">bedroom</li>
+		<li class= "list" data-filter="kitchen">kitchen</li>
+		<li class= "list" data-filter="bathroom">bathroom</li>
+		<li class= "list" data-filter="still_life">still life</li>
+	</ul>
+</section>
+
+<!-- Photo Grid -->
+
+<div class="row pswp-gallery " id="gallery"> 
+
+
+  <div class="column">
+
+<div class ="pswp-gallery__item itemBox exterior ">
+		<a    href="C:\Users\olgin\Desktop\archviz\NewLevelSequence2_0597.jpeg" 
+          data-pswp-width="1080" 
+          data-pswp-height="1920" 
+          target="_blank"
+		  >
+         
+		  <div class="video-container">
+		  <video width= "100%"  controls> <source src="C:\Users\olgin\Desktop\archviz\NewLevelSequence2_2.mp4" >
+		  </video>
+		  </div>
+    </a>
+    <div class="pswp-caption-content">
+	<b>reference experiments/ </b>
+	<p><a href="https://www.atlasofplaces.com/architecture/house-on-gotland/"><em>House on Gotland by ETAT ARKITEKTER</em></a></p>
+	<br>Unreal Engine 5<br>
+	
+	</div>
+	</div>
+
+
+  
+<div class ="pswp-gallery__item itemBox exterior ">
+		<a    href="C:\Users\olgin\Desktop\archviz\ai_exterior_1-web.JPG" 
+          data-pswp-width="2048" 
+          data-pswp-height="3072" 
+          target="_blank"
+		  >
+          <img src="C:\Users\olgin\Desktop\archviz\ai_exterior_1-web.JPG" style="width:100%" >
+    </a>
+    <div class="pswp-caption-content">
+	<b>reference experiments</b>
+	<br>ai render<br>
+	
+	</div>
+	</div>
+  
+  
+ 
+  
+  
+<div class ="pswp-gallery__item itemBox exterior ">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\palace_de_circles.jpg" 
+          data-pswp-width="1406" 
+          data-pswp-height="2500" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\palace_de_circles.jpg" style="width:100%" >
+    </a>
+    <div class="pswp-caption-content">
+	<b>Circles Pavilion,by Claude Nicolas Ledoux</b>
+	<br>3dmax, fstorm<br>
+	
+	</div>
+	</div>
+	
+<div class ="pswp-gallery__item itemBox still_life ">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\antropo_1web.jpg" 
+          data-pswp-width="1633" 
+          data-pswp-height="2450" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\antropo_1web.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>personal project</b>
+		<br>design by Antropologie
+		<br>3dmax, fstorm
+		</p>
+		</div>
+</div>
+
+<div class ="pswp-gallery__item itemBox interior ">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\RH_LIVING_2web.jpg" 
+          data-pswp-width="1500" 
+          data-pswp-height="1920" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\RH_LIVING_2web.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project 2021</b>
+		<br>design by Match architects
+		<br>3dmax, fstorm
+		</p>
+		</div>
+	</div> 
+	
+<div class ="pswp-gallery__item itemBox bedroom interior">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\HC_bedroom_2.jpg" 
+          data-pswp-width="1400" 
+          data-pswp-height="1920" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\HC_bedroom_2.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project</b>
+		<br>design by Match architects
+		<br>3dmax, fstorm
+		</p>
+		</div>
+	</div>
+
+<div class ="pswp-gallery__item itemBox kitchen interior">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\HC1_kitchen_1.jpg" 
+          data-pswp-width="1400" 
+          data-pswp-height="1920" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\HC1_kitchen_1.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project</b>
+		<br>design by Match architects
+		<br>3dmax, fstorm
+		</p>
+		</div>
+	</div> 
+	
+<div class ="pswp-gallery__item itemBox bathroom interior">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\HC1_bath_1web.jpg" 
+          data-pswp-width="1400" 
+          data-pswp-height="1920" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\HC1_bath_1web.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project 2019</b>
+		<br>design by Match architects
+		<br>3dmax, corona render
+		</p>
+		</div>
+</div>  
+	
+<div class ="pswp-gallery__item itemBox bathroom interior">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\GQ1_WC_1-1web.jpg" 
+          data-pswp-width="1400" 
+          data-pswp-height="1740" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\GQ1_WC_1-1web.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project 2016</b>
+		<br>design by Match architects
+		<br>3dmax, vray
+		</p>
+		</div>
+</div>	
+
+<div class ="pswp-gallery__item itemBox bedroom interior">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\GARDEN_QUARTERS_GUEST_BEDROOM_3web.jpg" 
+          data-pswp-width="1400" 
+          data-pswp-height="2000	" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\GARDEN_QUARTERS_GUEST_BEDROOM_3web.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project 2016</b>
+		<br>design by Match architects
+		<br>3dmax, vray
+		</p>
+		</div>
+</div>
+	
+<div class ="pswp-gallery__item itemBox bedroom interior">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\GARDEN_QUARTERS_BEDROOM_2web.jpg" 
+          data-pswp-width="2000" 
+          data-pswp-height="1381" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\GARDEN_QUARTERS_BEDROOM_2web.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project 2016</b>
+		<br>design by Match architects
+		<br>3dmax, vray
+		</p>
+		</div>
+</div>	
+	
+  </div>
+  <div class="column">
+
+<div class ="pswp-gallery__item itemBox interior ">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\PRE_gotland_2.jpg" 
+          data-pswp-width="900" 
+          data-pswp-height="1200" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\PRE_gotland_2.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>personal project 2021</b>
+		<br>reference: Gotland concrete house
+		<br>3dmax, fstorm
+		</p>
+		</div>
+	</div> 
+
+<div class ="pswp-gallery__item itemBox exterior ">
+		<a    href="C:\Users\olgin\Desktop\archviz\ai_exterior_2-web.jpg" 
+          data-pswp-width="2048" 
+          data-pswp-height="2048" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\ai_exterior_2-web.jpg" style="width:100%" >
+    </a>
+    <div class="pswp-caption-content">
+	<b>reference experiments</b>
+	<br>ai render<br>
+	
+	</div>
+	</div>
+
+<div class ="pswp-gallery__item itemBox exterior ">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\rc_wp_1.jpg" 
+          data-pswp-width="1080" 
+          data-pswp-height="1920" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\rc_wp_1.jpg" style="width:100%" >
+    </a>
+    <div class="pswp-caption-content">
+	<b>render.camp workshop</b>
+	<br>3dmax, fstorm<br>
+	
+	</div>
+	</div>
+
+<div class ="pswp-gallery__item itemBox still_life ">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\antropo_3web.jpg" 
+          data-pswp-width="1633" 
+          data-pswp-height="2450" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\antropo_3web.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>personal project</b>
+		<br>design by Antropologie
+		<br>3dmax, fstorm
+		</p>
+		</div>
+</div>
+
+<div class ="pswp-gallery__item itemBox kitchen interior">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\RH_kitchen_1.jpg" 
+          data-pswp-width="1500" 
+          data-pswp-height="1920" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\RH_kitchen_1.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project</b>
+		<br>design by Match architects
+		<br>3dmax, fstorm
+		</p>
+		</div>
+	</div> 
+
+<div class ="pswp-gallery__item itemBox interior ">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\RH_LIVING_1web.jpg" 
+          data-pswp-width="1920" 
+          data-pswp-height="1080" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\RH_LIVING_1web.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project 2021</b>
+		<br>design by Match architects
+		<br>3dmax, fstorm
+		</p>
+		</div>
+	</div> 
+
+<div class ="pswp-gallery__item itemBox exterior ">
+		<a    href="C:\Users\olgin\Desktop\archviz\stalenhag1web.jpg" 
+          data-pswp-width="1920" 
+          data-pswp-height="1920" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\stalenhag1web.jpg" style="width:100%" >
+    </a>
+    <div class="pswp-caption-content">
+	<b>viz.guru workshop result</b>
+	<br>3dmax, fstorm<br>
+	
+	</div>
+	</div>
+    
+<div class ="pswp-gallery__item itemBox bedroom interior">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\future_bedroom_1.jpg" 
+          data-pswp-width="1920" 
+          data-pswp-height="1200" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\future_bedroom_1.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>personal project</b>
+		<br>3dmax, fstorm
+		</p>
+		</div>
+</div>
+   
+ 
+  
+<div class ="pswp-gallery__item itemBox bathroom ">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\copper_wc_1web.jpg" 
+          data-pswp-width="1400" 
+          data-pswp-height="1920" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\copper_wc_1web.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project 2020</b>
+		<br>design by Match architects
+		<br>3dmax, fstorm
+		</p>
+		</div>
+</div>	
+  
+<div class ="pswp-gallery__item itemBox bathroom ">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\sally_bath_2web.jpg" 
+          data-pswp-width="1920" 
+          data-pswp-height="1400" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\sally_bath_2web.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project 2018</b>
+		<br>design by Match architects
+		<br>3dmax, corona render
+		</p>
+		</div>
+</div>
+
+<div class ="pswp-gallery__item itemBox bathroom ">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\pekin_wc_1web.jpg" 
+          data-pswp-width="1400" 
+          data-pswp-height="1920" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\pekin_wc_1web.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project 2019</b>
+		<br>design by Match architects
+		<br>3dmax, fstorm
+		</p>
+		</div>
+</div>
+<div class ="pswp-gallery__item itemBox bedroom ">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\GARDEN_QUARTERS_BEDROOM_5web.jpg" 
+          data-pswp-width="1400" 
+          data-pswp-height="2000	" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\GARDEN_QUARTERS_BEDROOM_5web.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project 2016</b>
+		<br>design by Match architects
+		<br>3dmax, vray
+		</p>
+		</div>
+</div>	
+
+
+</div>
+  <div class="column">
+
+   <div class ="pswp-gallery__item itemBox exterior ">
+		<a href="C:\Users\olgin\Desktop\archviz\rcamp_sunset.jpg" 
+          data-pswp-width="1280" 
+          data-pswp-height="1920" 
+          target="_blank"
+		  >
+          <img src="C:\Users\olgin\Desktop\archviz\rcamp_sunset.JPG" style="width:100%" >
+    </a>
+    <div class="pswp-caption-content">
+	<b>render.camp workshop result</b>
+	<br>3dmax, corona render<br>
+	
+	</div>
+	</div>
+    
+ <div class ="pswp-gallery__item itemBox exterior ">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\rc_wp_2.jpg" 
+          data-pswp-width="1346" 
+          data-pswp-height="2000" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\rc_wp_2.jpg" style="width:100%" >
+    </a>
+    <div class="pswp-caption-content">
+	<b>render.camp workshop</b>
+	<br>3dmax, fstorm<br>
+	
+	</div>
+	</div>
+	
+
+<div class ="pswp-gallery__item itemBox still_life ">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\antropo_2web.jpg" 
+          data-pswp-width="1633" 
+          data-pswp-height="2450" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\antropo_2web.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>personal project</b>
+		<br>design by Antropologie
+		<br>3dmax, fstorm
+		</p>
+		</div>
+</div>
+
+<div class ="pswp-gallery__item itemBox bedroom interior">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\future_bedroom_2.jpg" 
+          data-pswp-width="1920" 
+          data-pswp-height="1200" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\future_bedroom_2.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>personal project</b>
+		<br>3dmax, fstorm
+		</p>
+		</div>
+</div>  
+
+<div class ="pswp-gallery__item itemBox kitchen interior">
+
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\RH_kitchen_2.jpg" 
+          data-pswp-width="1400" 
+          data-pswp-height="1920" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\RH_kitchen_2.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project</b>
+		<br>design by Match architects
+		<br>3dmax, fstorm
+		</p>
+		</div>
+	</div> 
+
+<div class ="pswp-gallery__item itemBox exterior ">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\RC_course_web2.jpg" 
+          data-pswp-width="1704" 
+          data-pswp-height="1137" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\RC_course_web2.jpg" style="width:100%" >
+    </a>
+    <div class="pswp-caption-content">
+	<b>render.camp PV 4.0 diploma project 2018</b>
+	<br>3dmax, fstorm<br>
+	
+	</div>
+	</div>
+
+<div class ="pswp-gallery__item itemBox bedroom interior">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\HC_bedroom_1.jpg" 
+          data-pswp-width="1400" 
+          data-pswp-height="1920" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\HC_bedroom_1.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project</b>
+		<br>design by Match architects
+		<br>3dmax, fstorm
+		</p>
+		</div>
+</div>
+   
+<div class ="pswp-gallery__item itemBox bathroom interior">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\pekin_bah_1web.jpg" 
+          data-pswp-width="1312" 
+          data-pswp-height="1800" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\pekin_bah_1web.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project 2019</b>
+		<br>design by Match architects
+		<br>3dmax, fstorm
+		</p>
+		</div>
+</div>
+   
+<div class ="pswp-gallery__item itemBox bathroom interior">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\sally_bath_1web.jpg" 
+          data-pswp-width="1400" 
+          data-pswp-height="1920" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\sally_bath_1web.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project 2018</b>
+		<br>design by Match architects
+		<br>3dmax, corona render
+		</p>
+		</div>
+</div>  
+    
+<div class ="pswp-gallery__item itemBox bedroom interior">
+	
+	<a    href="C:\Users\olgin\Desktop\archviz\GARDEN_QUARTERS_GUEST_BEDROOM_1web.jpg" 
+          data-pswp-width="2000" 
+          data-pswp-height="1400	" 
+          target="_blank">
+          <img src="C:\Users\olgin\Desktop\archviz\GARDEN_QUARTERS_GUEST_BEDROOM_1web.jpg" style="width:100%" >
+    </a>
+		<div class="pswp-caption-content">
+		<p><b>commercial project 2016</b>
+		<br>design by Match architects
+		<br>3dmax, vray
+		</p>
+		</div>
+</div>	
+
+
+
+</div>
+ 
+
+
+<!-- end of Photo Grid -->
+
+
+</body>
+</html>
