@@ -206,7 +206,8 @@ border-bottom: 2px solid black;
 .video_container_vert{
 	
 	margin-top: 8px;
-
+	vertical-align: middle;
+	width:100%;
 
 	
 	
