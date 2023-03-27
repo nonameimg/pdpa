@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.3.0/dist/photoswipe.css">
+    <link rel="stylesheet" href="https://dimsemenov.github.io/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+	<link rel="stylesheet" href="stylearch.css">
+<body>
+</head>
+<style>
+
+</style>
+
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="file:///C:/Users/olgin/Desktop/grid/about_.html">about</a>
+    <a href="#">contact</a>
+  </div>
+</div>
+
+
+
+
+<div class="w3-bar w3-red fix  ">
+  <a href="file:///C:/Users/olgin/Desktop/grid/grid.html" class="w3-bar-item w3-button ">home</a>
+  <a href="file:///C:/Users/olgin/Desktop/grid/about_.html" class="w3-bar-item w3-button w3-hide-small">about</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small">contact</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium " onclick="openNav()">&#9776; </a>
+</div>
+
+<div id="demo" class="up5 w3-bar-block  w3-hide w3-hide-large w3-hide-medium  w3-red fix ">
+  <a href="file:///C:/Users/olgin/Desktop/grid/about_.html" class="w3-bar-item w3-button">about</a>
+  <a href="#" class="w3-bar-item w3-button">contact</a>
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.3.js"
+integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+crossorigin="anonymous"></script>
+  
+ 
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.list').click(function(){
+	const value = $(this).attr('data-filter');
+	if (value == 'all'){
+	$('.itemBox').show('1000');
+	}
+	else {
+	$('.itemBox').not('.'+value).hide('1000');
+	$('.itemBox').filter('.'+value).show('1000');
+	}
+	})
+	$('.list').click(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		})
+})
+	</script>
+
+
+<script type="module">
+
+      import PhotoSwipeLightbox from "https://cdn.jsdelivr.net/npm/photoswipe@5.3.0/dist/photoswipe-lightbox.esm.js";	
+      import PhotoSwipeDynamicCaption from "https://dimsemenov.github.io/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.esm.js";
+
+      const smallScreenPadding = {
+        top: 0, bottom: 0, left: 0, right: 0
+      };
+      const largeScreenPadding = {
+        top: 30, bottom: 30, left: 0, right: 0
+      };
+      const lightbox = new PhotoSwipeLightbox({
+        gallerySelector: '#gallery',
+        childSelector: '.pswp-gallery__item ',
+        
+        // optionaly adjust viewport
+        paddingFn: (viewportSize) => {
+          return viewportSize.x < 700 ? smallScreenPadding : largeScreenPadding
+        },
+        pswpModule: () => import("https://cdn.jsdelivr.net/npm/photoswipe@5.3.0/dist/photoswipe.esm.js")
+      });
+
+      const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
+        mobileLayoutBreakpoint: 700,
+        type: 'auto',
+        mobileCaptionOverlapRatio: 1
+      });
+
+      lightbox.init();
+      </script>
+
+<!-- text start-->
+<div class="container2">
+<p>e-mail:
+<br>
+<strong><a href="mailto:noname.img@gmail.com">noname.img@gmail.com</a></strong>
+<br>
+
+social networks:
+<br>
+<strong><a href="https://www.linkedin.com/in/dmitrii-olgin-425942251">LinkedIn</a></strong><br>
+<strong><a href="https://www.instagram.com/noname_image">Instagram</a></strong><br>
+
+
+
+</p>
+</div>
+<!-- text end-->
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
+</script>
+
+
+
+</body>
+</html>
