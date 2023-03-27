@@ -208,9 +208,9 @@ border-bottom: 2px solid black;
 	width: 100%;*/
   position: relative;
   height: 100%;
-  
+  overflow: hidden;
   padding-top: 177%; /* 16:9 Aspect Ratio */
-  z-index: -1;
+  z-index: 0;
     
 }
 
