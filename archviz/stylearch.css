@@ -203,13 +203,13 @@ border-bottom: 2px solid black;
 
 }
 .video-container {
-	/*margin-top: 8px;
-	vertical-align: middle;
+	margin-top: 8px;
+	/*vertical-align: middle;
 	width: 100%;*/
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 145%; /* 16:9 Aspect Ratio */
+  padding-top: 177%; /* 16:9 Aspect Ratio */
   z-index: -1;
     
 }
