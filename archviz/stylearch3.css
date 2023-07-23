@@ -227,6 +227,19 @@ z-index:1;
 z-index:0;
 
 }
+.containery {
+	margin-top: 8px;
+
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+z-index:0;
+
+}
+
+
+
 
 .responsive-iframex {
   position: absolute;
