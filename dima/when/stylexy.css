@@ -79,6 +79,7 @@ a img { border: none; }
 #menu ul {
 	list-style: none;
 	margin: 0 0 12px 0;
+
 }
 
 
@@ -86,6 +87,7 @@ a img { border: none; }
     /*height: 100%;*/
     margin: 0 0 0 215px;
     top: 0;
+	
 }
 
 .container {
@@ -118,6 +120,7 @@ a img { border: none; }
 p {
 	max-width: 600px;
     margin: 0 0 9px 0;
+	
 }
 
 h1 { font-size: 10px; }
