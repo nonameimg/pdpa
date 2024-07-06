@@ -21,11 +21,11 @@ body {
 	 position: fixed;
      top: 0;
      right: 0;
-	 font-size:50px;
+	 font-size:30px;
 	 cursor:pointer;
 	 background-color:#e791ff;
 	 font-weight: bold;
-	 padding: 14px;
+	 padding: 9px;
 	 
   }
   #buttonOpen{
@@ -33,13 +33,13 @@ body {
 	 position: fixed;
      top: 0;
      right: 0;
-	 font-size:50px;
+	 font-size:30px;
 	 font-weight: bold;
 	 cursor:pointer;
 	 color:#e791ff;
 	 background-color:white;
 	 z-index: 960;
-	 padding: 15px;
+	 padding: 10px;
   }
   
  
