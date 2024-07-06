@@ -130,10 +130,11 @@ The once transitional zones became the entrance to a new dimension made up of th
 With the crisis of space comes the crisis of time and history, filling space with anachronisms. And in this timelessness, only nostalgia for an unfulfilled future, nostalgia for a lost organ of navigation, is stable. This is why I wrote this message in the hope of finding a place for dialogue that might restore lost connections and provide a new, albeit barely flickering, reference point.
 <br></p>
 </div>
+<div style="padding: 0 10px 8px 8px" >
 <div class="video-container"> 
   <iframe class="responsive-iframe" width="1200" height="675" src="https://drive.google.com/file/d/1E3bXPC_w5DKJ4K6EmLEORvp29NMDn5Ga/preview"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
 </div>
-
+</div>
 
  <p>interface versions to download:<br>
 <strong><a href='https://drive.google.com/file/d/1HDjM3SKVbnZY-7wYWviKnYPWecwEFfew/view?usp=sharing' >ver. 1, Windows PC</a></strong><br>
@@ -141,33 +142,25 @@ With the crisis of space comes the crisis of time and history, filling space wit
 <!-- newspaper -->
 <p><strong>#1 issue </strong><br></p>
 <p>This issue of the newspaper is a collection of stories and notes left on the bulletin board at the bus stop. A bus stop that never existed, yet exists in every city. As an organic part of urban infrastructure, the bus stop serves as an interface or gateway to a parallel dimension, the dimension of transit zones, or non-places, as Marc Auger puts it. The world of non-places gradually penetrates our world, leaving ghostly flickering elements invisible to us. This slow but dangerous mixing means the destruction, or rather the voluntary extinction, of our urban world. As a counter-attack, you can use the subversive interface (by downloading from the link on the qr code) to reclaim your place, reclaiming the historicity and identity of the emptied spaces through the power of the logos in dialogue with other inhabitants in the notes they have left behind.<br></p>
-<!--
-<div class="w3-content w3-display-container">
-<span> <img class="mySlides" src="Untitled-1.jpg"  style="width:100%"> </span>
-<span> <img class="mySlides" src="Untitled-2.jpg"  style="width:100%"> </span>
-<span> <img class="mySlides" src="Untitled-3.jpg"  style="width:100%"> </span>
-<span> <img class="mySlides" src="Untitled-4.jpg"  style="width:100%"> </span>
-<span> <img class="mySlides" src="Untitled-5.jpg"  style="width:100%"> </span>
-<span> <img class="mySlides" src="Untitled-6.jpg"  style="width:100%"> </span>
-<span> <img class="mySlides" src="Untitled-7.jpg"  style="width:100%"> </span>
-<span> <img class="mySlides" src="Untitled-8.jpg"  style="width:100%"> </span>
-
-<span class='w3-button w3-black w3-display-left'  onclick="plusDivs(-1)">&#10094;</span>  
-<span class='w3-button w3-black w3-display-right'  onclick="plusDivs(1)">&#10095;</span>  
-</div>
--->
-<div id='img-container'>
-<span> <img src="Untitled-1.jpg"  style="width:100%"> </span>
-<span> <img src="Untitled-2.jpg"  style="width:100%"> </span>
-<span> <img src="Untitled-3.jpg"  style="width:100%"> </span>
-<span> <img src="Untitled-4.jpg"  style="width:100%"> </span>
-<span> <img src="Untitled-5.jpg"  style="width:100%"> </span>
-<span> <img src="Untitled-6.jpg"  style="width:100%"> </span>
-<span> <img src="Untitled-7.jpg"  style="width:100%"> </span>
-<span> <img src="Untitled-8.jpg"  style="width:100%"> </span>
-</div>
 
 
+
+<!-- slider -->
+<swiper-container class="mySwiper" keyboard="true" space-between="30" pagination="true" pagination-clickable="true"
+    navigation="true" loop="true" style="padding: 0 8px">
+    <swiper-slide><img src="Untitled-1.jpg"  style="width:100%"></swiper-slide>
+	<swiper-slide><img src="Untitled-2.jpg"  style="width:100%"></swiper-slide>
+	<swiper-slide><img src="Untitled-3.jpg"  style="width:100%"></swiper-slide>
+    <swiper-slide><img src="Untitled-4.jpg"  style="width:100%"></swiper-slide>
+	<swiper-slide><img src="Untitled-5.jpg"  style="width:100%"></swiper-slide>
+	<swiper-slide><img src="Untitled-6.jpg"  style="width:100%"></swiper-slide>
+	<swiper-slide><img src="Untitled-7.jpg"  style="width:100%"></swiper-slide>
+	<swiper-slide><img src="Untitled-8.jpg"  style="width:100%"></swiper-slide>
+
+
+
+  </swiper-container>
+  <!-- end slider -->
 
  
 
@@ -225,24 +218,7 @@ x.addListener(myFunction) // Attach listener function on state changes
 </script>
 
 <!-- slider functions -->
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
+<script src="//postende.com/swiper-element-bundle.min.js">
 </script>
 </body>
 
