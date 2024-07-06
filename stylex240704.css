@@ -23,9 +23,10 @@ body {
      right: 0;
 	 font-size:30px;
 	 cursor:pointer;
-	 background-color:#e791ff;
+	 background-color:white;
 	 font-weight: bold;
 	 padding: 9px;
+	 color:#e791ff;
 	 
   }
   #buttonOpen{
