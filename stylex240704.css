@@ -77,7 +77,8 @@ a img { border: none; }
 
 #content {
     /*height: 100%;*/
-    margin: 0 0 0 215px;
+    /*margin: 0 0 0 215px;*/
+	margin: 0 0 0 50px;
     top: 0;
 }
 
