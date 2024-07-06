@@ -85,12 +85,12 @@ a img { border: none; }
     padding: 5px 5px 25px 5px;
 }
 .slider-container {
-    width: 80%; margin: 0; padding: 0;background-color:red;
+    width: 90%; margin: 0; padding: 0;background-color:red;
 }
 
 .video-container {
   position: relative;
-  width: 80%;
+  width: 90%;
   overflow: hidden;
   padding-top: 45%; /* 16:9 Aspect Ratio */
   z-index: 900;
@@ -118,7 +118,7 @@ h2 { font-size: 12px; }
 h3 { font-size: 12px; }
 h4 { font-size: 12px; }
 
-#img-container    { width: 80%; margin: 0; padding: 0; }
+#img-container    { width: 90%; margin: 0; padding: 0; }
 #img-container p    { width: 60%; margin: 0; padding: 0 0 12px 0; }
 
 
