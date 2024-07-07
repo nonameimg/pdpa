@@ -8,9 +8,11 @@
   font-family: FONTFAM;
   src: url('https://www.postende.com/archviz/ABCMonumentGrotesk-Regular-Trial.woff2')
 }
+
 body {
 	font-size: 12px;
-	font-family: Verdana, sans-serif;
+	/*font-family: Verdana, sans-serif;*/
+	font-family: "Courier New", monospace;
 	/*font-family: FONTFAM;*/
 	background: #fff;
 }
