@@ -200,26 +200,42 @@ h4 { font-size: 12px; }
 }
 
 /* label on image anon */
+/* обертка картинки */
 .img-wrap {
   position: relative;
   display: block;
 }
 
+/* сама картинка */
 .img-wrap img {
   width: 100%;
   display: block;
 }
 
+/* затемнение */
+.img-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  pointer-events: none; /* важно чтобы клик проходил */
+}
+
+/* текст */
 .img-label {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   color: white;
-  font-size: 18px;
+  font-size: 20px;
+  text-align: center;
 
-  background: rgba(0,0,0,0.5);
-  padding: 5px 10px;
+  /* наследует твой основной шрифт */
+  font-family: inherit;
+
+  z-index: 1;
 }
 
 
