@@ -184,7 +184,7 @@ h4 { font-size: 12px; }
   
 }
 .column3x {
-  -ms-flex: 33%; /* IE10 */
+  -ms-flex: 50%; /* IE10 */
   flex: 33%;
   max-width: 33%;
   padding: 0 4px;
