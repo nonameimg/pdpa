@@ -183,6 +183,14 @@ h4 { font-size: 12px; }
   margin-bottom: 8px;
   
 }
+.column3x {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+  margin-bottom: 8px;
+  
+}
 
 .column img {
   margin-top: 2px;
