@@ -199,6 +199,28 @@ h4 { font-size: 12px; }
   width: 100%;
 }
 
+/* label on image anon */
+.img-wrap {
+  position: relative;
+  display: block;
+}
+
+.img-wrap img {
+  width: 100%;
+  display: block;
+}
+
+.img-label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  color: white;
+  font-size: 18px;
+
+  background: rgba(0,0,0,0.5);
+  padding: 5px 10px;
+}
 
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
